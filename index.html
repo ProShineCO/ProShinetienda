@@ -495,6 +495,16 @@
 
   /* ---------- DISTRIBUIDORES ---------- */
   .distribuidores{padding:40px 0 150px;}
+  .city-title{
+    font-family:'Fraunces',serif;font-weight:500;font-style:italic;
+    font-size:clamp(28px,3.4vw,40px);
+    margin:0 0 22px;color:var(--ink);
+    display:flex;align-items:center;gap:16px;
+  }
+  .city-title::after{
+    content:'';flex:1;height:1px;background:var(--line);
+  }
+  .city-title.medellin{margin-top:56px;}
   .bogota-card{
     display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;
     background:var(--panel);border:1px solid var(--line);border-radius:12px;
@@ -813,15 +823,17 @@
       <p>Pedidos directos en Bogotá, o visítanos en cualquiera de nuestros distribuidores en Medellín.</p>
     </div>
 
+    <h3 class="city-title reveal">Bogotá</h3>
     <div class="bogota-card reveal">
       <div class="bogota-info">
-        <span class="product-badge">Bogotá</span>
+     
         <h4>Pedidos y compras directas</h4>
         <p>Coordina tu pedido y envío directamente con nosotros por WhatsApp.</p>
       </div>
       <a href="https://wa.me/573027048888" class="btn btn-primary" target="_blank" rel="noopener">302 704 8888</a>
     </div>
 
+    <h3 class="city-title medellin reveal">Medellín</h3>
     <div class="dist-grid">
 
       <div class="dist-card reveal">
